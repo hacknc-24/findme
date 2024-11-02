@@ -3,12 +3,13 @@ import TopBar from './TopBar.tsx';
 import ProfileSection from './ProfileSection.tsx';
 import placeholder_img from './placeholder.png';
 import { useState } from 'react';
+
 // import { useNavigate } from "react-router-dom";
 
 
 const Profile = () =>{
 
-  // const navigate = useNavigate();
+  
 
   const [tags, SetTags] = useState<string[]>([])
 
@@ -23,7 +24,7 @@ const Profile = () =>{
   };
 
   return (
-    <div className="profile">
+    <div className="profile" style={{ backgroundColor: '#e8e6e3', height: '100vh' }}>
       <TopBar />
       <ProfileSection 
       username="Jim Smith" 
@@ -31,14 +32,6 @@ const Profile = () =>{
       tags={tags}
       addTag={addTag}
       removeTag={removeTag}/>
-
-            <main>
-                {/* Your main content goes here */}
-                <div className="profilecontainer">
-                  {/* <h1 class="header">Centered Header</h1> */}
-                  <h2>Welcome</h2>
-                </div>
-            </main>
     </div>
   );
 }
