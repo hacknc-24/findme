@@ -1,14 +1,27 @@
 import "./style.css";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: object) => console.log(data);
+  const onSubmit = async (data: object) => {
+    try {
+      console.log(data);
+      Swal.fire("Good job!", "You are being logged in!", "success").then(() => {
+        navigate("/home");
+      });
+    } catch (error) {
+      Swal.fire("Oops...", "Invalid credentials", "error");
+    }
+  };
 
   return (
     <>
@@ -17,7 +30,9 @@ const Auth = () => {
           <div className="login">
             <div className="loginForm">
               <p>Start your journey!</p>
+              <br/>
               <h3>Sign up to FindMe!</h3>
+               <br></br>
               <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="text"
