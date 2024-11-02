@@ -31,9 +31,11 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    height: 90%;
     justify-content: space-around;
+    overflow-y: scroll; /* Always show vertical scrollbar */
+    max-height: 40%; /* Set a fixed height for the container */
 }
+
 .connectionButton { 
     width: 40%;
     background-color: blue;
