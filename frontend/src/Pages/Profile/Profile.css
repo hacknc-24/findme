@@ -1,0 +1,33 @@
+.profile {
+  font-family: Arial, sans-serif;
+  max-width: 37.5rem; /* 600px equivalent */
+  margin: auto; /* Center the app */
+  place-items: center;
+}
+
+.profilecontainer {
+  display: grid; /* Use grid layout */
+  place-items: center; /* Center both horizontally and vertically */
+  height: 10vh; 
+  /* width: 50vw; */
+}
+
+@media (max-width: 37.5rem) { /* 600px equivalent */
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profilelogo {
+    margin-top: 0.3125rem; /* 5px equivalent */
+  }
+
+  .profile-pic {
+    width: 5rem; /* 80px equivalent */
+    height: 5rem; /* 80px equivalent */
+  }
+
+  .username {
+    font-size: 1rem; /* 16px equivalent */
+  }
+}
