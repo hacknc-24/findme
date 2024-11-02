@@ -1,0 +1,26 @@
+.tags-section {
+    margin-top: 1rem;
+  }
+  
+.tags-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+.tag {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+.add-tag {
+    margin-top: 0.5rem;
+  }
+  
+.add-tag input {
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+  }
