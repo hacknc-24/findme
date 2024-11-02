@@ -1,0 +1,82 @@
+.dashboardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.block {
+    width: 400px;
+    height: 400px;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usersLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.firstRow {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.usersList { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+}
+.connectionButton { 
+    width: 40%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.secondRow { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.refreshButton { 
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loadingButton { 
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.SecondRow { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
