@@ -30,9 +30,7 @@ const Auth = () => {
           <div className="login">
             <div className="loginForm">
               <p>Start your journey!</p>
-              <br/>
               <h3>Sign up to FindMe!</h3>
-               <br></br>
               <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="text"
