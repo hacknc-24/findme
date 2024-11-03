@@ -45,26 +45,9 @@ const Dashboard = () => {
     <>
       <Navbar />
       <div className="dashboardContainer">
-        <div className="block">
-          <h1>Who's nearby?</h1>
-          <button className="connectionButton" onClick={getLocation}>Start connecting...</button>
-          <div className="usersLayout">
-            <div className="firstRow">
-              <ul className="usersList">
-                {mockUsers.map(user => (
-                  <li key={user.id}>
-                    <p>{user.name}</p>
-                    <p>{user.description}</p>
-                  </li>
-                ))}
-              </ul>
-              <button className="loadingButton">Load more...</button>
-            </div>
-            <div className="secondRow">
-              <button className="refreshButton">Refresh</button>
-            </div>
-          </div>
-        </div>
+        <img src="src\images\boardIdle.png" alt="Idle" className="boardIdle" />
+        <p style={{color:"white"}}>See who is in the befriending distance!👀</p>
+        <button className="searchingButton">Start Connecting!</button>
       </div>
     </>
   );

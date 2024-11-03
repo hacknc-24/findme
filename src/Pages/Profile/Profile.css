@@ -1,8 +1,14 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .profile {
   font-family: Arial, sans-serif;
-  max-width: 37.5rem; /* 600px equivalent */
-  margin: auto; /* Center the app */
   place-items: center;
+  background: #130F1D;
 }
 
 .profilecontainer {

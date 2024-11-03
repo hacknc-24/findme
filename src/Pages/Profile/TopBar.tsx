@@ -7,15 +7,23 @@ const TopBar = () => {
   const navigate = useNavigate();
 
   const handleGoHome = () => {
-    navigate('/home'); // Navigate to the home page
+    navigate('/home'); 
 };
 
   return (
-    <div className="top-bar">
-      <button className="menu-button" onClick={handleGoHome}>Menu</button>
-      <div className="logo">Logo</div>
+    <div className="topBar">
+      <img 
+        src='src/images/image.png' 
+        className="topBarImage" 
+        alt="Image"
+      />
+      <img 
+        src='src/images/hamburger.png' 
+        className="topBarHamburger" 
+        alt="Hamburger Menu"
+        onClick={handleGoHome}
+      />
     </div>
   );
-};
-
+}
 export default TopBar;
