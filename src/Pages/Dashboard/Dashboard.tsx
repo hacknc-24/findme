@@ -16,16 +16,16 @@ const Dashboard = () => {
     { id: 10, name: 'User 10', description: 'Description for User 10' },
   ];
 
-  const sendLocation = (data: Object) => {
-    fetch("", {
-      method: "POST",
-      headers: {
-        "Content-Type"  : "application/json"},
-      body: JSON.stringify({
-        "data": data
-      })
-    })
-  }
+  // const sendLocation = (data: Object) => {
+  //   fetch("", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type"  : "application/json"},
+  //     body: JSON.stringify({
+  //       "data": data
+  //     })
+  //   })
+  // }
   const getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
