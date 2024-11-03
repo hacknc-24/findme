@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# FindMe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A location-based social networking app that helps you discover and connect with people nearby who share your interests.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FindMe matches users based on their location and common interests. The app helps you find local connections for activities, hobbies, or just making new friends who share your passions.
 
-## Expanding the ESLint configuration
+## Features in Development
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Location-based user discovery
+- Interest matching system
+- User profiles
+- Real-time chat
+- Privacy controls
+- MongoDB Database storage functionality 
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React
+- Nest.js
+- MondoDB Compass
+- Node.js
+
+## Getting Started
+
+Front-end ENV 
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/hacknc-24/findme.git
+   ```
+
+2. Install dependencies
+   ```bash
+   cd findme
+   npm install
+   ```
+
+3. Run the development enviroment
+   ```
+   npm run dev
+   ```
+
+Back-end ENV 
+
+1) Clone
+   ```
+   https://github.com/hacknc-24/findme-backend.git
+   ```
+
+2. Install dependencies
+ ```bash
+cd  findme-backend
+cd backend
+```
+3. Run the development enviroment
+   ```bash
+   npm run start:dev
+   ```
+## Running the App
+
+Development mode:
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Production build:
+```bash
+npm run build
+npm start
 ```
+
+## Coming Soon
+
+- iOS integration
+- Message persistence
+- 
