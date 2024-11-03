@@ -8,9 +8,9 @@ const Auth = () => {
 
   const {
     register,
-    
+
     handleSubmit,
-    formState: { },
+    formState: {},
   } = useForm();
   const onSubmit = async (data: object) => {
     try {
@@ -27,26 +27,32 @@ const Auth = () => {
     <>
       <div className="authContainer">
         <div className="logo">
-          <img src="src\images\Find_Me_png.png" alt="logo"  className="logoImage"/>
+          <img src="assets/Find_Me_png.png" alt="logo" className="logoImage" />
         </div>
         <div className="InputContainer">
-        <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
-                <input
-                  type="text"
-                  placeholder="What is your username?"
-                  {...register("username")}
-                  className="authInput"
-                />
-                <input
-                  type="text"
-                  placeholder="Input your password!  "
-                  className="authInput"
-                  {...register("password", { required: true })}
-                />
-                <button type="submit" className="submit">Log in</button>
-              </form>
-              </div> 
-        <button type="submit" className="submitButton">Create new account</button>
+          <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
+            <input
+              type="text"
+              placeholder="What is your username?"
+              {...register("username")}
+              className="authInput"
+              style={{ marginBottom: "10px" }}
+            />
+            <input
+              type="text"
+              placeholder="Input your password!  "
+              className="authInput"
+              {...register("password", { required: true })}
+             
+            />
+            <button type="submit" className="submit" style={{marginTop:"10px"}}>
+              Log in
+            </button>
+          </form>
+        </div>
+        <button type="submit" className="submitButton">
+          Create new account
+        </button>
       </div>
     </>
   );
