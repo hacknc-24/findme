@@ -1,4 +1,5 @@
 # FindMe
+![image](https://github.com/user-attachments/assets/785177df-31df-46d4-b50f-693d1f30c8a9)
 
 A location-based social networking app that helps you discover and connect with people nearby who share your interests.
 
