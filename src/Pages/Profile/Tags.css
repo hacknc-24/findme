@@ -44,25 +44,34 @@
   font-family: var(--sds-typography-body-font-family);
 }
 
-.add-tag {
+
+
+  .add-tag {
     margin-top: 0.5rem;
-    align-items: center;
     display: flex;
-  }
-  
+    justify-content: center; /* Center the input field and button */
+    position: relative;
+    margin-bottom: 1rem;
+}
+
 .add-tag input {
     padding: 5px;
-    margin-right: 0.5rem;
     border-radius: 10px;
     border: 1px solid gray;
-    margin: 10px;
-  } 
+    width: 70%; /* 70% width of the container */
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
 
-  .add-tag button {
+.add-tag button {
+    width: 40px; /* Set the width to 40px */
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid gray;
     padding: 5px;
-    left: -47px;
-    position: relative;
-  }
+    position: absolute;
+    right: 15%; /* Position the button inside the input field */
+    top: 50%;
+    transform: translateY(-50%);
+}
