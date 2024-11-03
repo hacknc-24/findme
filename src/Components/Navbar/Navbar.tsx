@@ -1,5 +1,6 @@
-import './style.css'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './style.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,18 +13,18 @@ const Navbar = () => {
     <div className='navbarContainer'>
       <div className='navbarList' style={{ width: "100%" }}>
         <img 
-          src='src/images/loglo.png' 
+          src='assets/loglo.png' 
           style={{ height: "100%", marginLeft: "3%", cursor: "pointer" }} 
           onClick={handleRedirectProfile} 
           alt="Logo"
         />
         <img 
-          src='src/images/image.png' 
+          src='assets/image.png' 
           style={{ height: "100%", marginRight: "2%" }} 
           alt="Image"
         />
         <img 
-          src='src/images/hamburger.png' 
+          src='/assets/hamburger.png' 
           style={{ height: "40%", marginRight: "5%" }} 
           alt="Hamburger Menu"
         />

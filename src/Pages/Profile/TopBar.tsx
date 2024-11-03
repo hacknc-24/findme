@@ -16,12 +16,12 @@ const TopBar = () => {
         src='src/images/image.png' 
         className="topBarImage" 
         alt="Image"
+        onClick={handleGoHome}
       />
       <img 
         src='src/images/hamburger.png' 
         className="topBarHamburger" 
         alt="Hamburger Menu"
-        onClick={handleGoHome}
       />
     </div>
   );
