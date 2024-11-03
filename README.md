@@ -4,9 +4,8 @@
 A location-based social networking app that helps you discover and connect with people nearby who share your interests.
 
 ## Description
-
 FindMe matches users based on their location and common interests. The app helps you find local connections for activities, hobbies, or just making new friends who share your passions.
-
+Backend: https://github.com/hacknc-24/findme-backend.git
 ## Features in Development
 
 - Location-based user discovery
