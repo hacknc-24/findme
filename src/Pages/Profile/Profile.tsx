@@ -24,7 +24,7 @@ const Profile = () =>{
   };
 
   return (
-    <div className="profile" style={{ backgroundColor: '#e8e6e3', height: '100vh' }}>
+    <div className="profile" style={{ backgroundColor: '#130F1D', height: '100vh', width:"100vw" }}>
       <TopBar />
       <ProfileSection 
       username="Jim Smith" 

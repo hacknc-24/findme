@@ -25,13 +25,12 @@ const Auth = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="loginHalf">
-          <div className="login">
-            <div className="loginForm">
-              <p>Start your journey!</p>
-              <h3>Sign up to FindMe!</h3>
-              <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
+      <div className="authContainer">
+        <div className="logo">
+          <img src="src\images\Find_Me_png.png" alt="logo"  className="logoImage"/>
+        </div>
+        <div className="InputContainer">
+        <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="text"
                   placeholder="What is your username?"
@@ -44,14 +43,10 @@ const Auth = () => {
                   className="authInput"
                   {...register("password", { required: true })}
                 />
-                <button type="submit">Sign up</button>
+                <button type="submit" className="submit">Log in</button>
               </form>
-            </div>
-          </div>
-        </div>
-        <div className="imageHalf">
-          <img src="src\images\pexels-geladelrosario-4341879.jpg"></img>
-        </div>
+              </div> 
+        <button type="submit" className="submitButton">Create new account</button>
       </div>
     </>
   );
