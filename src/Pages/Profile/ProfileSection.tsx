@@ -16,6 +16,16 @@ const ProfileSection:React.FC<ProfileSectionProps> = ({ username, profilePicture
       <img src={profilePicture} alt="Profile" className="profile-picture" />
       <span className="username">{username}</span>
       <Tags tags={tags} addTag={addTag} removeTag={removeTag} />
+      <a href="" style={{
+        marginTop: '31px',
+        color: "#FFF",
+        fontFamily: "Josefin Sans",
+        fontSize: "16px",
+        fontStyle: "normal",
+        fontWeight: "400",
+        lineHeight: "normal",
+        textDecoration: "none",
+      }}>Delete Account</a>
     </div>
   );
 };

@@ -14,5 +14,12 @@
   
 .username {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    /* color: #fff; */
+    color: var(--Schemes-On-Error, #FFF);
+    font-family: "Inknut Antiqua";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }

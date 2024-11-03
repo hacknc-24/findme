@@ -5,8 +5,6 @@ interface TagsProps {
   tags: string[];
   addTag: (tag: string) => void;
   removeTag: (tag: string) => void;
-
-
 }
 
 const Tags: React.FC<TagsProps> = ({ tags , addTag, removeTag }) => {
@@ -19,11 +17,11 @@ const Tags: React.FC<TagsProps> = ({ tags , addTag, removeTag }) => {
 
   return (
     <div className="tags-section">
-      <h3>Tags:</h3>
+      <div className="tags-title">TAGS</div>
       <div className="tags-list">
         {tags.map(tag => (
           <div className="tag" key={tag}>
-            {tag} <button onClick={() => removeTag(tag)}>x</button>
+            {tag} <button onClick={() => removeTag(tag)}>X</button>
           </div>
         ))}
       </div>
