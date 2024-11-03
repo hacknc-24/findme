@@ -33,14 +33,14 @@ const Auth = () => {
           <form className="authForm" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              placeholder="What is your username?"
+              placeholder="  What is your username?"
               {...register("username")}
               className="authInput"
               style={{ marginBottom: "10px" }}
             />
             <input
               type="text"
-              placeholder="Input your password!  "
+              placeholder="  Input your password!  "
               className="authInput"
               {...register("password", { required: true })}
              

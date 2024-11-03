@@ -64,13 +64,17 @@ color: white;
 
   .authInput {
     height: 30%;
+    margin-left: 30px;
     min-height: 35px; /* Adjust base value for smaller screens */
     max-height: 55px; /* Adjust maximum value for smaller screens */
     width: 50%; /* Adjust width for smaller screens */
+    padding-left: 20px;
   }
+
 
   .submit {
     height: 35%;
+    margin-left: 30px;
     min-height: 45px; /* Adjust base value for smaller screens */
     max-height: 65px; /* Adjust maximum value for smaller screens */
     width: 50%; /* Adjust width for smaller screens */
