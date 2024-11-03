@@ -9,8 +9,7 @@ const Auth = () => {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
+    formState: { },
   } = useForm();
   const onSubmit = async (data: object) => {
     try {
