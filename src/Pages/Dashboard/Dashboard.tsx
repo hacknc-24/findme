@@ -2,7 +2,7 @@ import Navbar from "../../Components/Navbar/Navbar"
 import './dashboardStyle.css'
 
 
-// const Dashboard = () => {
+const Dashboard = () => {
 //   const mockUsers = [
 //     { id: 1, name: 'User 1', description: 'Description for User 1' },
 //     { id: 2, name: 'User 2', description: 'Description for User 2' },
