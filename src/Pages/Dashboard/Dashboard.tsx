@@ -42,7 +42,7 @@ const Dashboard = () => {
   //   }
   // }
 
-  const showUsersAlert = (users) => {
+  const showUsersAlert = (users: { id: number; name: string; description: string; image: string }[]) => {
     // Format the users data as HTML content with images
     const userContent = users.map(user => `
       <div style="margin-bottom: 15px;">
