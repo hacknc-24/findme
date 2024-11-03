@@ -42,9 +42,9 @@ const Dashboard = () => {
   //   }
   // }
 
-  const showUsersAlert = (users) => {
+  const showUsersAlert = (users: any) => {
     // Format the users data as HTML content with images
-    const userContent = users.map(user => `
+    const userContent = users.map((user: any) => `
       <div style="margin-bottom: 15px;">
         <img src="${user.image}" alt="${user.name}" style="width: 100px; height: auto; border-radius: 5px; margin-bottom: 5px;"><br>
         <strong>ID:</strong> ${user.id}<br>
