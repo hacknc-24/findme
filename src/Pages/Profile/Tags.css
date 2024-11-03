@@ -1,26 +1,68 @@
 .tags-section {
     margin-top: 1rem;
+    border-radius: 15px;
+    background: #ffffff3d;
+    width: 70vw;
   }
+
+  .tags-title {
+    width: 95px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 17px;
+    padding: 5px 25px;
+    width: 50px;
+    margin: 10px auto;
+    color: #FFF;
+    background-color: gray;
+  
+  }
+
   
 .tags-list {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-  }
-  
+    padding: 1rem;
+}
+
 .tag {
-    background-color: #f0f0f0;
-    padding: 0.5rem;
+    color: #FFF;
+    background-color: #333; 
+    padding: 5px 10px;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
-  }
-  
+}
+
+/* x button */
+.tag button {
+  color: #FFF;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  font-family: var(--sds-typography-body-font-family);
+}
+
 .add-tag {
     margin-top: 0.5rem;
+    align-items: center;
+    display: flex;
   }
   
 .add-tag input {
-    padding: 0.3rem;
+    padding: 5px;
     margin-right: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px;
+  } 
+
+  .add-tag button {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    left: -47px;
+    position: relative;
   }
