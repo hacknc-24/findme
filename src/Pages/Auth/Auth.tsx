@@ -8,6 +8,7 @@ const Auth = () => {
 
   const {
     register,
+    
     handleSubmit,
     formState: { },
   } = useForm();
